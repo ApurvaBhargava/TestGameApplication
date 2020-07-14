@@ -1,0 +1,6 @@
+_partition,_aspect,_key,_type,_value
+Column,option,displayChoicesList,object,"[{""choice_list_name"":""select6"",""data_value"":""a1"",""display"":{""title"":{""text"":""N1""}},""_row_num"":2},{""choice_list_name"":""select6"",""data_value"":""a2"",""display"":{""title"":{""text"":""N2""}},""_row_num"":3},{""choice_list_name"":""select6"",""data_value"":""a3"",""display"":{""title"":{""text"":""N3""}},""_row_num"":4},{""choice_list_name"":""select6"",""data_value"":""a4"",""display"":{""title"":{""text"":""N4""}},""_row_num"":5},{""choice_list_name"":""select6"",""data_value"":""a5"",""display"":{""title"":{""text"":""N5""}},""_row_num"":6},{""choice_list_name"":""select6"",""data_value"":""a6"",""display"":{""title"":{""text"":""N6""}},""_row_num"":7}]"
+FormType,default,FormType.formType,string,SURVEY
+SurveyUtil,default,SurveyUtil.formId,string,game
+Table,default,defaultViewType,string,SPREADSHEET
+Table,default,displayName,object,"{""text"":""Game Form""}"
