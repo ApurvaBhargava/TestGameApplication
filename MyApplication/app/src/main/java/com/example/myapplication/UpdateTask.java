@@ -63,12 +63,16 @@ public class UpdateTask extends AsyncTask {
     @Override
     protected Object doInBackground(Object[] objects) {
         try {
+            boolean bindComplete = true;
             intent.setComponent(new ComponentName("org.opendatakit.services", "org.opendatakit.services.database.service.OdkDatabaseService"));
             intent.setAction(IDbInterface.class.getName());
-            context.bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+            bindComplete = context.bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
             while(true) {
-                Log.i("here", "stuck");
+                //Log.i("here", "stuck");
                 if(isBound) break;
+                else if(!bindComplete) {
+                    bindComplete = context.bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+                }
             }
             DbHandle db = mService.openDatabase(appName);
             String currentTableId = "game";
@@ -79,7 +83,13 @@ public class UpdateTask extends AsyncTask {
             BaseTable table = nService.simpleQuery(appName, db, currentTableId, null, null, null, null,
                     null, null, null, null);
             int last_row_index = table.getNumberOfRows()-1;
-            JSONArray userListObject = new JSONArray(oService.getUsersList(appName));
+            String otherUser;
+            if(userName.equals("username:apurvab")) {
+                otherUser = "username:amoon";
+            } else {
+                otherUser = "username:apurvab";
+            }
+            /*JSONArray userListObject = new JSONArray(oService.getUsersList(appName));
             String[] usersList = new String[userListObject.length()];
             String otherUser = "";
             for(int i=0; i<userListObject.length(); i++) {
@@ -88,7 +98,7 @@ public class UpdateTask extends AsyncTask {
                     if(usersList[i].equals("username:apurvab") || usersList[i].equals("username:amoon"))
                         otherUser = usersList[i];
                 }
-            }
+            }*/
             for(int i=last_row_index; i>=0; i--)  {
                 Row tr = table.getRowAtIndex(i);
                 if(otherUser.equals(String.valueOf(tr.getRawStringByIndex(table.getColumnIndexOfElementKey("name"))))) {
@@ -101,7 +111,7 @@ public class UpdateTask extends AsyncTask {
             context.stopService(intent);
             Log.i("TAG", "Service unbounded.");
             isBound = false;
-        } catch (RemoteException | ServicesAvailabilityException | JSONException e) {
+        } catch (RemoteException | ServicesAvailabilityException e) {
             e.printStackTrace();
         }
         return null;
