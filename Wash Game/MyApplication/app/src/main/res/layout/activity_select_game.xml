@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectGameActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+            <!--Put form controls here-->
+            <TextView
+                android:id="@+id/TextViewSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/form_header_two"
+                android:textSize="10pt">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditPlayerName"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_player_name"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditPlayerID"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_player_id"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditChooseGame"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_game_id"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <Button
+                android:id="@+id/button_play_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_play_game"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

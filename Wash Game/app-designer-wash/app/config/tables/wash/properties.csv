@@ -1,0 +1,6 @@
+_partition,_aspect,_key,_type,_value
+Column,selection,displayChoicesList,object,"[{""choice_list_name"":""options5"",""data_value"":""o1"",""display"":{""title"":{""text"":""O1""}},""_row_num"":2},{""choice_list_name"":""options5"",""data_value"":""o2"",""display"":{""title"":{""text"":""O2""}},""_row_num"":3},{""choice_list_name"":""options5"",""data_value"":""o3"",""display"":{""title"":{""text"":""O3""}},""_row_num"":4},{""choice_list_name"":""options5"",""data_value"":""o4"",""display"":{""title"":{""text"":""O4""}},""_row_num"":5},{""choice_list_name"":""options5"",""data_value"":""o5"",""display"":{""title"":{""text"":""O5""}},""_row_num"":6}]"
+FormType,default,FormType.formType,string,SURVEY
+SurveyUtil,default,SurveyUtil.formId,string,wash
+Table,default,defaultViewType,string,SPREADSHEET
+Table,default,displayName,object,"{""text"":""Wash Form""}"

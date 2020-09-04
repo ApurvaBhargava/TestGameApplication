@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_db">DbActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="create_game">Create New Game</string>
+    <string name="select_game">Select Game To Play</string>
+    <string name="form_header">Enter details to create a new game</string>
+    <string name="enter_game_id">Game ID</string>
+    <string name="enter_round_num">Number of Rounds</string>
+    <string name="enter_player_num">Number of Players</string>
+    <string name="enter_creator_name">Name of creator</string>
+    <string name="enter_player_name">Player Name</string>
+    <string name="form_header_two">Enter player details and select game</string>
+    <string name="enter_player_id">Player ID</string>
+    <string name="create_game_final">CREATE GAME</string>
+    <string name="create_play_game">PLAY GAME</string>
+    <string name="game_name">WASH App</string>
+    <string name="option1">Do nothing (Cost: 0)</string>
+    <string name="option2">Wash hands sometimes (Cost: 10)</string>
+    <string name="option3">Reduce open defecation sometimes (Cost: 20)</string>
+    <string name="option4">Wash hands always (Cost: 30)</string>
+    <string name="option5">End open defecation completely/ buy toilet (Cost: 40)</string>
+    <string name="game_id_header">Game ID: 0</string>
+    <string name="round_header">Round: 1</string>
+    <string name="instruction">Select a choice based on the cost incurred:</string>
+    <string name="groupmin">Group Minimum Cost:</string>
+    <string name="roundscore">Round Score:</string>
+    <string name="totalscore">Total Score in Game:</string>
+    <string name="round_submit">Submit Selection and Go To Next Round</string>
+    <string name="form_header_three">Enter parameter values for payoff matrix</string>
+    <string name="param_a">Parameter \'a\'</string>
+    <string name="param_b">Parameter \'b\'</string>
+    <string name="param_c">Parameter \'c\'</string>
+    <string name="finalize_param">Finalize parameters</string>
+    <string name="selection_matrix">VIEW SELECTION MATRIX</string>
+    <string name="score_matrix">VIEW SCORE MATRIX</string>
+    <string name="start_game">Start</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFormActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+            <!--Put form controls here-->
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/form_header"
+                android:textSize="10pt">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditCreatorName"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_creator_name"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditGameID"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_game_id"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditRoundNum"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_round_num"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditPlayerNum"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_player_num"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <TextView
+                android:id="@+id/ParameterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/form_header_three"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="10pt">
+            </TextView>
+
+            <EditText
+                android:id="@+id/ParamA"
+                android:layout_height="wrap_content"
+                android:hint="@string/param_a"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/ParamB"
+                android:layout_height="wrap_content"
+                android:hint="@string/param_b"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/ParamC"
+                android:layout_height="wrap_content"
+                android:hint="@string/param_c"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <Button
+                android:id="@+id/button_create_game_final"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_game_final"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

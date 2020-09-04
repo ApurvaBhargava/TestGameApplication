@@ -1,0 +1,11 @@
+i/jars/classes.jar
+i/jars/libs/commons-io-2.5.jar
+i/jars/libs/commons-lang3-3.5.jar
+i/jars/libs/jackson-annotations-2.10.1.jar
+i/jars/libs/jackson-core-2.10.1.jar
+i/jars/libs/jackson-databind-2.10.1.jar
+i/jars/libs/jackson-dataformat-xml-2.10.1.jar
+i/jars/libs/joda-time-2.10.3.jar
+i/jars/libs/odk-rest-interface-2.1.5-javadoc.jar
+i/jars/libs/odk-rest-interface-2.1.5-sources.jar
+i/jars/libs/odk-rest-interface-2.1.5.jar
